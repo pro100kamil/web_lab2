@@ -1,0 +1,126 @@
+* {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #bda1c2;
+    height: 100%;
+}
+
+p {
+    font-size: 16px;
+}
+
+.container {
+    min-height: calc(100vh - 100px);
+}
+
+.header > h1, .header > h2 {
+    color: #383333;
+}
+
+.header + hr {
+    margin-top: 10px;
+    border: 1px solid red;
+}
+
+.content {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.main {
+    min-height: 100px;
+    width: 45%;
+    float: left;
+}
+
+form > p {
+    margin-bottom: 10px;
+}
+
+form > p#error-message {
+    color: #a40404;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+form input[type="text"], form select {
+    border-radius: 7px;
+    padding: 7px;
+}
+
+form input[type="text"]:hover {
+    border: 1px solid red;
+}
+
+form input[type="submit"] {
+    border-radius: 15px;
+    padding: 10px;
+}
+
+form input[type="submit"]:hover {
+    border-radius: 25px;
+    border: 2px solid red;
+}
+
+.sidebar {
+    min-height: 400px;
+    width: 54%;
+    max-width: 100%;
+    float: left;
+}
+
+.main > table, .sidebar {
+    margin: 10px auto;
+}
+
+.content td {
+    color: black;
+    font-size: 18px;
+}
+
+th, td {
+    padding: 10px;
+}
+
+td:hover {
+    font-style: italic;
+}
+
+@media (max-width: 1000px) {
+    .main, .sidebar {
+        width: 100%;
+    }
+}
+
+canvas {
+    border: 1px dashed black;
+}
+
+canvas:hover {
+    border: 1px solid red;
+}
+
+.footer {
+    background-color: #282121;
+    height: 100px;
+    clear: both;
+}
+
+.footer > p {
+    color: #ac77e8;
+    padding-top: 40px;
+
+    /*animation: */
+    transition-property: font-size, color;
+    transition-duration: 4s;
+    transition-timing-function: cubic-bezier(0, .5, .5, 1.5);;
+}
+
+.footer > p:hover {
+    color: pink;
+    font-size: 25px;
+}
